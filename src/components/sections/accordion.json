@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_sections_accordions",
+  "info": {
+    "displayName": "accordion"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "sub_heading": {
+      "type": "string"
+    },
+    "content": {
+      "type": "component",
+      "component": "content.paragraph",
+      "repeatable": true
+    },
+    "ctas": {
+      "type": "component",
+      "component": "ui.cta",
+      "repeatable": true
+    },
+    "cards": {
+      "type": "component",
+      "component": "ui.card",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

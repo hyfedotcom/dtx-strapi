@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_sections_why_resolve_dtxes",
+  "info": {
+    "displayName": "why-resolve-dtx"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "sub_heading": {
+      "type": "string"
+    },
+    "content": {
+      "type": "component",
+      "component": "content.paragraph",
+      "repeatable": true
+    },
+    "cta": {
+      "type": "component",
+      "component": "ui.cta",
+      "repeatable": true
+    },
+    "cards": {
+      "type": "component",
+      "component": "ui.card",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}
