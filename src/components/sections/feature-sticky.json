@@ -1,14 +1,11 @@
 {
-  "collectionName": "components_sections_why_resolve_dtxes",
+  "collectionName": "components_sections_feature_stickies",
   "info": {
-    "displayName": "feature-cards-rights"
+    "displayName": "feature-sticky"
   },
   "options": {},
   "attributes": {
     "heading": {
-      "type": "string"
-    },
-    "sub_heading": {
       "type": "string"
     },
     "content": {
@@ -16,7 +13,7 @@
       "component": "content.paragraph",
       "repeatable": true
     },
-    "cta": {
+    "ctas": {
       "type": "component",
       "component": "ui.cta",
       "repeatable": true

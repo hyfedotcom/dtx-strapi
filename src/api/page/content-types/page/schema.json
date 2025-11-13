@@ -23,7 +23,13 @@
       "components": [
         "sections.why-resolve-dtx",
         "sections.hero",
-        "sections.accordion"
+        "sections.accordion",
+        "sections.feature-sticky",
+        "sections.feature-scroll-showcase",
+        "sections.solutions",
+        "sections.cta",
+        "sections.navigation",
+        "sections.feature-tabs"
       ]
     }
   }

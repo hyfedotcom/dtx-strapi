@@ -1,7 +1,7 @@
 {
-  "collectionName": "components_ui_cards",
+  "collectionName": "components_ui_cards_layouts",
   "info": {
-    "displayName": "card"
+    "displayName": "cards-layouts"
   },
   "options": {},
   "attributes": {
@@ -22,14 +22,16 @@
         "files"
       ]
     },
-    "icon": {
-      "type": "media",
-      "multiple": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
+    "layout": {
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "layout-asthma",
+        "layout-COPD",
+        "layout-UK-guidance",
+        "layout-lung-cancer",
+        "layout-ILD",
+        "layout-default"
       ]
     }
   },

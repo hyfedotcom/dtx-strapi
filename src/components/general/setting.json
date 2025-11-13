@@ -1,19 +1,11 @@
 {
-  "collectionName": "components_ui_cards",
+  "collectionName": "components_general_settings",
   "info": {
-    "displayName": "card"
+    "displayName": "setting"
   },
   "options": {},
   "attributes": {
-    "heading": {
-      "type": "string",
-      "required": true
-    },
-    "paragraph": {
-      "type": "text",
-      "required": true
-    },
-    "image": {
+    "logo_footer": {
       "type": "media",
       "multiple": false,
       "required": true,
@@ -22,14 +14,13 @@
         "files"
       ]
     },
-    "icon": {
+    "logo_header": {
       "type": "media",
       "multiple": false,
+      "required": true,
       "allowedTypes": [
         "images",
-        "files",
-        "videos",
-        "audios"
+        "files"
       ]
     }
   },

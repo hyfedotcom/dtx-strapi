@@ -1,7 +1,7 @@
 {
-  "collectionName": "components_sections_why_resolve_dtxes",
+  "collectionName": "components_sections_navigations",
   "info": {
-    "displayName": "feature-cards-rights"
+    "displayName": "navigation"
   },
   "options": {},
   "attributes": {
@@ -16,14 +16,9 @@
       "component": "content.paragraph",
       "repeatable": true
     },
-    "cta": {
+    "nav_to_sections": {
       "type": "component",
-      "component": "ui.cta",
-      "repeatable": true
-    },
-    "cards": {
-      "type": "component",
-      "component": "ui.card",
+      "component": "navigation.nav-link",
       "repeatable": true
     }
   },

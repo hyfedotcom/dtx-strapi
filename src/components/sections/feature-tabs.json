@@ -1,14 +1,11 @@
 {
-  "collectionName": "components_sections_why_resolve_dtxes",
+  "collectionName": "components_sections_feature_tabs",
   "info": {
-    "displayName": "feature-cards-rights"
+    "displayName": "feature-tabs"
   },
   "options": {},
   "attributes": {
     "heading": {
-      "type": "string"
-    },
-    "sub_heading": {
       "type": "string"
     },
     "content": {
@@ -16,15 +13,16 @@
       "component": "content.paragraph",
       "repeatable": true
     },
-    "cta": {
+    "ctas": {
       "type": "component",
       "component": "ui.cta",
       "repeatable": true
     },
     "cards": {
       "type": "component",
-      "component": "ui.card",
-      "repeatable": true
+      "component": "ui.cards-layouts",
+      "repeatable": true,
+      "required": true
     }
   },
   "config": {}
