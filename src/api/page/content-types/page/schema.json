@@ -31,6 +31,11 @@
         "sections.navigation",
         "sections.feature-tabs"
       ]
+    },
+    "seo": {
+      "type": "component",
+      "component": "seo.seo",
+      "repeatable": false
     }
   }
 }

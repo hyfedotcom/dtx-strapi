@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_seo_seos",
+  "info": {
+    "displayName": "seo"
+  },
+  "options": {},
+  "attributes": {
+    "meta_title": {
+      "type": "string"
+    },
+    "meta_description": {
+      "type": "text"
+    },
+    "keywords": {
+      "type": "text"
+    },
+    "meta_image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "meta_robots": {
+      "type": "string"
+    },
+    "meta_viewport": {
+      "type": "string"
+    },
+    "canonical_URL": {
+      "type": "string"
+    },
+    "structured_data": {
+      "type": "json",
+      "required": false
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_navigation_social_medias",
+  "info": {
+    "displayName": "social-media"
+  },
+  "options": {},
+  "attributes": {
+    "target": {
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "x",
+        "facebook",
+        "linkedin",
+        "youtube"
+      ]
+    },
+    "link": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "config": {}
+}

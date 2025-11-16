@@ -491,6 +491,7 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
         'sections.feature-tabs',
       ]
     >;
+    seo: Schema.Attribute.Component<'seo.seo', false>;
     slug: Schema.Attribute.UID<'title'>;
     title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;

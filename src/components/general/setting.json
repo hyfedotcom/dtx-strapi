@@ -22,6 +22,11 @@
         "images",
         "files"
       ]
+    },
+    "social_media": {
+      "type": "component",
+      "component": "navigation.social-media",
+      "repeatable": true
     }
   },
   "config": {}

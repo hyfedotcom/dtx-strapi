@@ -20,6 +20,7 @@ export interface GeneralSetting extends Struct.ComponentSchema {
       Schema.Attribute.Required;
     logo_header: Schema.Attribute.Media<'images' | 'files'> &
       Schema.Attribute.Required;
+    social_media: Schema.Attribute.Component<'navigation.social-media', true>;
   };
 }
 
@@ -102,6 +103,20 @@ export interface NavigationNavLink extends Struct.ComponentSchema {
   attributes: {
     label: Schema.Attribute.String & Schema.Attribute.Required;
     link: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
+export interface NavigationSocialMedia extends Struct.ComponentSchema {
+  collectionName: 'components_navigation_social_medias';
+  info: {
+    displayName: 'social-media';
+  };
+  attributes: {
+    link: Schema.Attribute.String & Schema.Attribute.Required;
+    target: Schema.Attribute.Enumeration<
+      ['x', 'facebook', 'linkedin', 'youtube']
+    > &
+      Schema.Attribute.Required;
   };
 }
 
@@ -233,6 +248,23 @@ export interface SectionsWhyResolveDtx extends Struct.ComponentSchema {
   };
 }
 
+export interface SeoSeo extends Struct.ComponentSchema {
+  collectionName: 'components_seo_seos';
+  info: {
+    displayName: 'seo';
+  };
+  attributes: {
+    canonical_URL: Schema.Attribute.String;
+    keywords: Schema.Attribute.Text;
+    meta_description: Schema.Attribute.Text;
+    meta_image: Schema.Attribute.Media<'images' | 'files'>;
+    meta_robots: Schema.Attribute.String;
+    meta_title: Schema.Attribute.String;
+    meta_viewport: Schema.Attribute.String;
+    structured_data: Schema.Attribute.JSON;
+  };
+}
+
 export interface UiCard extends Struct.ComponentSchema {
   collectionName: 'components_ui_cards';
   info: {
@@ -302,6 +334,7 @@ declare module '@strapi/strapi' {
       'navigation.card': NavigationCard;
       'navigation.column-links': NavigationColumnLinks;
       'navigation.nav-link': NavigationNavLink;
+      'navigation.social-media': NavigationSocialMedia;
       'sections.accordion': SectionsAccordion;
       'sections.cta': SectionsCta;
       'sections.feature-scroll-showcase': SectionsFeatureScrollShowcase;
@@ -311,6 +344,7 @@ declare module '@strapi/strapi' {
       'sections.navigation': SectionsNavigation;
       'sections.solutions': SectionsSolutions;
       'sections.why-resolve-dtx': SectionsWhyResolveDtx;
+      'seo.seo': SeoSeo;
       'ui.card': UiCard;
       'ui.cards-layouts': UiCardsLayouts;
       'ui.cta': UiCta;
