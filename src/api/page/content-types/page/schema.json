@@ -29,7 +29,8 @@
         "sections.solutions",
         "sections.cta",
         "sections.navigation",
-        "sections.feature-tabs"
+        "sections.feature-tabs",
+        "sections.rich-text-block"
       ]
     },
     "seo": {

@@ -216,8 +216,17 @@ export interface SectionsNavigation extends Struct.ComponentSchema {
   attributes: {
     content: Schema.Attribute.Component<'content.paragraph', true>;
     heading: Schema.Attribute.String;
-    nav_to_sections: Schema.Attribute.Component<'navigation.nav-link', true>;
     sub_heading: Schema.Attribute.String;
+  };
+}
+
+export interface SectionsRichTextBlock extends Struct.ComponentSchema {
+  collectionName: 'components_sections_rich_text_blocks';
+  info: {
+    displayName: 'rich-text-block';
+  };
+  attributes: {
+    rich_text_block: Schema.Attribute.Blocks;
   };
 }
 
@@ -342,6 +351,7 @@ declare module '@strapi/strapi' {
       'sections.feature-tabs': SectionsFeatureTabs;
       'sections.hero': SectionsHero;
       'sections.navigation': SectionsNavigation;
+      'sections.rich-text-block': SectionsRichTextBlock;
       'sections.solutions': SectionsSolutions;
       'sections.why-resolve-dtx': SectionsWhyResolveDtx;
       'seo.seo': SeoSeo;
