@@ -77,9 +77,9 @@ export interface NavigationCard extends Struct.ComponentSchema {
   attributes: {
     gradient_end: Schema.Attribute.String;
     gradient_start: Schema.Attribute.String;
-    heading: Schema.Attribute.String;
+    heading: Schema.Attribute.String & Schema.Attribute.Required;
     image: Schema.Attribute.Media<'images' | 'files'>;
-    link: Schema.Attribute.String;
+    link: Schema.Attribute.String & Schema.Attribute.Required;
     paragraph: Schema.Attribute.String;
   };
 }
@@ -126,7 +126,8 @@ export interface SectionsAccordion extends Struct.ComponentSchema {
     displayName: 'accordion';
   };
   attributes: {
-    cards: Schema.Attribute.Component<'ui.card', true>;
+    cards: Schema.Attribute.Component<'ui.card', true> &
+      Schema.Attribute.Required;
     content: Schema.Attribute.Component<'content.paragraph', true>;
     ctas: Schema.Attribute.Component<'ui.cta', true>;
     heading: Schema.Attribute.String;
@@ -141,8 +142,9 @@ export interface SectionsCta extends Struct.ComponentSchema {
   };
   attributes: {
     content: Schema.Attribute.Component<'content.paragraph', true>;
-    ctas: Schema.Attribute.Component<'ui.cta', true>;
-    heading: Schema.Attribute.String;
+    ctas: Schema.Attribute.Component<'ui.cta', true> &
+      Schema.Attribute.Required;
+    heading: Schema.Attribute.String & Schema.Attribute.Required;
   };
 }
 
@@ -152,10 +154,12 @@ export interface SectionsFeatureScrollShowcase extends Struct.ComponentSchema {
     displayName: 'feature-scroll-showcase';
   };
   attributes: {
-    cards: Schema.Attribute.Component<'ui.card', true>;
+    cards: Schema.Attribute.Component<'ui.card', true> &
+      Schema.Attribute.Required;
     content: Schema.Attribute.Component<'content.paragraph', true>;
     ctas: Schema.Attribute.Component<'ui.cta', true>;
     heading: Schema.Attribute.String;
+    sub_heading: Schema.Attribute.String;
   };
 }
 
@@ -165,10 +169,12 @@ export interface SectionsFeatureSticky extends Struct.ComponentSchema {
     displayName: 'feature-sticky';
   };
   attributes: {
-    cards: Schema.Attribute.Component<'ui.card', true>;
+    cards: Schema.Attribute.Component<'ui.card', true> &
+      Schema.Attribute.Required;
     content: Schema.Attribute.Component<'content.paragraph', true>;
     ctas: Schema.Attribute.Component<'ui.cta', true>;
-    heading: Schema.Attribute.String;
+    heading: Schema.Attribute.String & Schema.Attribute.Required;
+    sub_heading: Schema.Attribute.String;
   };
 }
 
@@ -183,6 +189,7 @@ export interface SectionsFeatureTabs extends Struct.ComponentSchema {
     content: Schema.Attribute.Component<'content.paragraph', true>;
     ctas: Schema.Attribute.Component<'ui.cta', true>;
     heading: Schema.Attribute.String;
+    sub_heading: Schema.Attribute.String;
   };
 }
 
@@ -194,7 +201,7 @@ export interface SectionsHero extends Struct.ComponentSchema {
   attributes: {
     content: Schema.Attribute.Component<'content.paragraph', true>;
     ctas: Schema.Attribute.Component<'ui.cta', true>;
-    heading: Schema.Attribute.String;
+    heading: Schema.Attribute.String & Schema.Attribute.Required;
     image_mobile: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     >;
@@ -211,12 +218,11 @@ export interface SectionsHero extends Struct.ComponentSchema {
 export interface SectionsNavigation extends Struct.ComponentSchema {
   collectionName: 'components_sections_navigations';
   info: {
-    displayName: 'navigation';
+    displayName: 'choose_path';
   };
   attributes: {
     content: Schema.Attribute.Component<'content.paragraph', true>;
-    heading: Schema.Attribute.String;
-    sub_heading: Schema.Attribute.String;
+    heading: Schema.Attribute.String & Schema.Attribute.Required;
   };
 }
 
@@ -226,7 +232,7 @@ export interface SectionsRichTextBlock extends Struct.ComponentSchema {
     displayName: 'rich-text-block';
   };
   attributes: {
-    rich_text_block: Schema.Attribute.Blocks;
+    rich_text_block: Schema.Attribute.Blocks & Schema.Attribute.Required;
   };
 }
 
@@ -236,10 +242,12 @@ export interface SectionsSolutions extends Struct.ComponentSchema {
     displayName: 'solutions';
   };
   attributes: {
-    cards: Schema.Attribute.Component<'navigation.card', true>;
+    cards: Schema.Attribute.Component<'navigation.card', true> &
+      Schema.Attribute.Required;
     content: Schema.Attribute.Component<'content.paragraph', true>;
     ctas: Schema.Attribute.Component<'ui.cta', true>;
     heading: Schema.Attribute.String;
+    sub_heading: Schema.Attribute.String;
   };
 }
 
@@ -249,9 +257,10 @@ export interface SectionsWhyResolveDtx extends Struct.ComponentSchema {
     displayName: 'feature-cards-rights';
   };
   attributes: {
-    cards: Schema.Attribute.Component<'ui.card', true>;
+    cards: Schema.Attribute.Component<'ui.card', true> &
+      Schema.Attribute.Required;
     content: Schema.Attribute.Component<'content.paragraph', true>;
-    cta: Schema.Attribute.Component<'ui.cta', true>;
+    ctas: Schema.Attribute.Component<'ui.cta', true>;
     heading: Schema.Attribute.String;
     sub_heading: Schema.Attribute.String;
   };

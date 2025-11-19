@@ -6,7 +6,8 @@
   "options": {},
   "attributes": {
     "rich_text_block": {
-      "type": "blocks"
+      "type": "blocks",
+      "required": true
     }
   },
   "config": {}

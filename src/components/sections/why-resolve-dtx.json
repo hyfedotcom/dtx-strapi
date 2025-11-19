@@ -16,7 +16,7 @@
       "component": "content.paragraph",
       "repeatable": true
     },
-    "cta": {
+    "ctas": {
       "type": "component",
       "component": "ui.cta",
       "repeatable": true
@@ -24,7 +24,8 @@
     "cards": {
       "type": "component",
       "component": "ui.card",
-      "repeatable": true
+      "repeatable": true,
+      "required": true
     }
   },
   "config": {}

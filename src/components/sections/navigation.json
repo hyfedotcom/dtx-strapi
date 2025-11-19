@@ -1,15 +1,13 @@
 {
   "collectionName": "components_sections_navigations",
   "info": {
-    "displayName": "navigation"
+    "displayName": "choose_path"
   },
   "options": {},
   "attributes": {
     "heading": {
-      "type": "string"
-    },
-    "sub_heading": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "content": {
       "type": "component",

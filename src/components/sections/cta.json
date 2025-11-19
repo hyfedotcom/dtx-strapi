@@ -6,7 +6,8 @@
   "options": {},
   "attributes": {
     "heading": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "content": {
       "type": "component",
@@ -16,7 +17,8 @@
     "ctas": {
       "type": "component",
       "component": "ui.cta",
-      "repeatable": true
+      "repeatable": true,
+      "required": true
     }
   },
   "config": {}

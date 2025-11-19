@@ -24,7 +24,8 @@
     "cards": {
       "type": "component",
       "component": "ui.card",
-      "repeatable": true
+      "repeatable": true,
+      "required": true
     }
   },
   "config": {}
