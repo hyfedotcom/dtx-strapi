@@ -27,6 +27,11 @@
       "type": "component",
       "component": "navigation.social-media",
       "repeatable": true
+    },
+    "navigation_between_paths": {
+      "type": "component",
+      "component": "navigation.column-links",
+      "repeatable": false
     }
   },
   "config": {}

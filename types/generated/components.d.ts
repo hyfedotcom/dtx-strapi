@@ -20,6 +20,10 @@ export interface GeneralSetting extends Struct.ComponentSchema {
       Schema.Attribute.Required;
     logo_header: Schema.Attribute.Media<'images' | 'files'> &
       Schema.Attribute.Required;
+    navigation_between_paths: Schema.Attribute.Component<
+      'navigation.column-links',
+      false
+    >;
     social_media: Schema.Attribute.Component<'navigation.social-media', true>;
   };
 }

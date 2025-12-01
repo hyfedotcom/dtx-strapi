@@ -490,6 +490,7 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
         'sections.navigation',
         'sections.feature-tabs',
         'sections.rich-text-block',
+        'navigation.column-links',
       ]
     >;
     seo: Schema.Attribute.Component<'seo.seo', false>;

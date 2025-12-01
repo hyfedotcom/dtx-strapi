@@ -30,7 +30,8 @@
         "sections.cta",
         "sections.navigation",
         "sections.feature-tabs",
-        "sections.rich-text-block"
+        "sections.rich-text-block",
+        "navigation.column-links"
       ]
     },
     "seo": {
